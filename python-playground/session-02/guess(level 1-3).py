@@ -16,9 +16,13 @@ secret_number = random.randint(1, max_angka)
 guess = 0
 
 while guess != secret_number :
+  print("Rentang Angka 1 - ", max_angka)
   guess = int(input("Your Guess: "))
 
-  if guess > secret_number :
+  if guess > max_angka :
+    print("Angka Di Luar Rentang!")
+    break
+  elif guess > secret_number :
     print("Too High!")
   elif guess < secret_number :
     print("Too Low!")
