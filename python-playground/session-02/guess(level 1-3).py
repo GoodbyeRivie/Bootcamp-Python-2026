@@ -22,7 +22,8 @@ while guess != secret_number :
   if guess > max_angka or guess < 1 :
     print("Angka Di Luar Rentang!")
     break
-  elif guess > secret_number :
+    
+  if guess > secret_number :
     print("Too High!")
   elif guess < secret_number :
     print("Too Low!")
