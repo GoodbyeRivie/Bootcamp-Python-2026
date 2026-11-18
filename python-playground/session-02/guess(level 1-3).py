@@ -19,7 +19,7 @@ while guess != secret_number :
   print("Rentang Angka 1 - ", max_angka)
   guess = int(input("Your Guess: "))
 
-  if guess > max_angka :
+  if guess > max_angka or guess < 1 :
     print("Angka Di Luar Rentang!")
     break
   elif guess > secret_number :
