@@ -1,6 +1,4 @@
-import random
-
-secret_number = random.randint(1,10)
+secret_number = 37
 guess = int(input("Masukkan Tebakanmu: "))
 
 if guess > secret_number :
